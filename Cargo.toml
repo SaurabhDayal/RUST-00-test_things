@@ -1,0 +1,28 @@
+[package]
+name = "test_things"
+version = "0.1.0"
+edition = "2021"
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# Date
+chrono = { version = "0.4", features = ["serde"] }
+
+# Hashing
+pwhash = "1"
+
+# Token - Random token generation + Actix setting in Header
+rand = "0.8.4"
+
+actix-web = "4"
+serde = { version = "1.0", features = ["derive"] }
+derive_more = "0.99.0"
+serde_json = "1"
+
+hyper = "0.11"
+
+futures-util = "0.3.28"
+
+
